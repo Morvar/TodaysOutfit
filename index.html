@@ -6,16 +6,25 @@
         if(ready)
         
         {
-            var weather = prompt("Right, let's start. First, how good is the weather today?\n1, 2, 3, or 4? (4 is the best.)");
-            console.log("1. user answered:" + weather); //kontrollsak
+            var weather;
+            
+            do
+                weather = prompt("Right, let's start. First, how good is the weather today?\n1, 2, 3, or 4? (4 is the best.)");
+            while(weather !== "1" && weather !== "2" && weather !== "3" && weather !== "4" );
+            console.log("1. user answered:" + weather);
             
             var mood = prompt("Okay, how happy are you today?\n1, 2, 3, or 4? (4 is the best.)");
-            console.log("2. user answered:" + mood); //kontrollsak
+            console.log("2. user answered:" + mood);
             
             var banana = prompt("Fine, now the most important question. How much do you like bananas?\n1, 2, 3, or 4? (4 is the best.)");
-            console.log("3. user answered:" + banana); //kontrollsak
+            console.log("3. user answered:" + banana);
             
-            console.log("sum of users answers:" + (parseInt(weather) + parseInt(mood) + parseInt(banana)));
+            var answer = (parseInt(weather) + parseInt(mood) + parseInt(banana))
+            
+            console.log("sum of users answers:" + answer);
+            
+            
+            
         }
                 
             
