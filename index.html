@@ -1,19 +1,34 @@
 <html>
         <script>
             
-        
-           if( confirm("Ready to get dressed?\nThen go ahead and click ok!") );
+        var Ready = confirm("Ready to get dressed?\nThen go ahead and click OK!");
+
+        if(Ready == true)
             
             {
-                var Weather = Prompt("Right, let's start. First, is it rainy today?\nYes or no?");
+                var Weather = Prompt("Right, let's start. First, is it rainy today?\nyes or no?");
+                
+                if(Weather == "yes")
+                    
+                {
+                    prompt("Hioohip");
+                    
+                }
+                
+                else
+                    
+                {
+                    prompt("hipoö");
+                }
             }
+                
             
             else
                 
             {
                 alert("Okay, reload the page when you're ready.");
             }
-        
+            
         </script>
     
 </html>
